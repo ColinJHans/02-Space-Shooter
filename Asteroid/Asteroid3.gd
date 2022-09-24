@@ -6,7 +6,7 @@ var initial_speed = 2.0
 var health = 1
 
 onready var Asteroid_small = load("res://Asteroid/Asteroid3_small.tscn")
-var small_asteroids = [Vector2(0,-30),Vector2(30,30),Vector2(-30,30)]
+var small_asteroids = [Vector2(0,-30),Vector2(30,30),Vector2(-30,30),Vector2(30,-30),Vector2(0,30)]
 
 func _ready():
 	velocity = Vector2(0,initial_speed*randf()).rotated(PI*2*randf())
